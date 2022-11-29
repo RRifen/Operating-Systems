@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modern OS</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../mainPage/img/favicon.png"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="headDivWrapper">
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="../historyOsPage/index.html">История ОС</a>
+                    <a href="../modernOsPage/index.html">Современные ОС</a>
+                    <a href="../interfacePage/index.html">Интерфейс</a>
+                    <a href="../feedback/index.html">Обратная связь</a>
+                </nav>
+                <div class="basketWrapper" id="bsWrapper">
+                    <p id="basketNote">0/7</p>
+                    <input
+                        type="image"
+                        src="img/notes.png"
+                        alt=""
+                        id="basket"
+                    />
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </header>
+        <div class="element element1 freeBSDpopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/freeBSD.png"
+                alt=""
+                class="osImage"
+                id="freeBSD"
+            />
+            <p>FreeBSD</p>
+        </div>
+        <div class="element element2 androidpopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/android.png"
+                alt=""
+                class="osImage"
+                id="android"
+            />
+            <p>Android</p>
+        </div>
+        <div class="element element3 chromeOspopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/chrome.png"
+                alt=""
+                class="osImage"
+                id="chromeOs"
+            />
+            <p>Chrome OS</p>
+        </div>
+        <div class="element element4 fedorapopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/fedora.png"
+                alt=""
+                class="osImage"
+                id="fedora"
+            />
+            <p>Fedora</p>
+        </div>
+        <div class="element element5 macpopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/mac.png"
+                alt=""
+                class="osImage"
+                id="mac"
+            />
+            <p>IOs/macOS</p>
+        </div>
+        <div class="element element6 ubuntupopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/ubuntu.png"
+                alt=""
+                class="osImage"
+                id="ubuntu"
+            />
+            <p>Ubuntu</p>
+        </div>
+        <div class="element element7 windowspopP">
+            <input type="image" src="img/delete.png" alt="" id="cross" />
+            <input
+                type="image"
+                src="img/windows.png"
+                alt=""
+                class="osImage"
+                id="windows"
+            />
+            <p>Microsoft Windows</p>
+        </div>
+        <div id="freeBSDpop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">FreeBSD</div>
+                <div><button class="closePop">&times;</button></div>
+            </div>
+            <div class="popMain">
+                FreeBSD — свободная операционная система семейства UNIX, потомок
+                AT&T Unix по линии BSD, созданной в университете Беркли.
+                <br /><br />
+                FreeBSD хорошо зарекомендовала себя как система для построения
+                интранет- и интернет-сетей и серверов. Она предоставляет
+                надёжные сетевые службы и эффективное управление памятью.
+                <br /><br />
+                Помимо своей стабильности, FreeBSD популярна и благодаря своей
+                лицензии, которая существенно отличается от широко известной
+                лицензии GNU GPL. Лицензия BSD позволяет использовать код не
+                только в свободном ПО, но и в проприетарном.
+            </div>
+        </div>
+        <div id="androidpop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">Android</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Android — операционная система для смартфонов, планшетов,
+                электронных книг, цифровых проигрывателей, наручных часов,
+                телевизоров и многих других устройств. <br />
+                <br />
+                Изначально разрабатывалась компанией Android, Inc., которую
+                затем приобрела Google. Основана на ядре Linux и собственной
+                реализации виртуальной машины Java компании Google.
+                <br /><br />
+                Android позволяет запускать Java-приложения, управляющие
+                устройством через разработанные Google библиотеки. Android
+                Native Development Kit позволяет портировать библиотеки и
+                компоненты приложений, написанные на Си и других языках.
+            </div>
+        </div>
+        <div id="chromeOspop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">Chrome OS</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Chrome OS — дистрибутив операционной системы GNU/Linux от
+                компании Google, предназначенная для устройств на процессорах
+                ARM или x86. Google Chrome OS построена на основе Gentoo
+                GNU/Linux и использует браузер Google Chrome, работающий в
+                новой, специально разработанной оконной системе. Большая часть
+                исходного кода системы была открыта 19 ноября 2009 года в
+                качестве проекта Chromium OS. <br /><br />
+                Главной особенностью данной ОС является доминирвоание
+                веб-приложений над обычными функциями ОС. Ключевая роль при этом
+                отводится браузеру. Стратегия создания нового продукта
+                подразумевает архитектуру, нетребовательную к аппаратным
+                ресурсам персонального компьютера.
+            </div>
+        </div>
+        <div id="fedorapop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">Fedora</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Fedora — дистрибутив Linux, разрабатываемый Проектом Fedora,
+                спонсируемый компаниями Red Hat и IBM и содержащий возможности,
+                которые в будущем предполагаются к использованию в дистрибутиве
+                Red Hat Enterprise Linux. Цель проекта — построение целостной
+                операционной системы из свободного программного обеспечения
+                силами сообщества в духе экосистемы Red Hat Linux. <br /><br />
+                Актуальные версии дистрибутива в период поддержки постоянно
+                получают обновления программ и библиотек, включая новые
+                стабильные версии ядра Linux. Fedora содержит программное
+                обеспечение, распространяемое по различным свободным лицензиям,
+                и стремится быть на переднем крае технологий c открытым исходным
+                кодом.
+            </div>
+        </div>
+        <div id="macpop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">macOS</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                macOS — проприетарная операционная система компании Apple.
+                <br /><br />
+                В macOS используется ядро XNU, основанное на микроядре Mach и
+                содержащее программный код, разработанный компанией Apple, а
+                также код из ОС NeXTSTEP и FreeBSD. <br /><br />
+                В macOS (как и в любой UNIX-системе) используется вытесняющая
+                многозадачность и защита памяти, позволяющие запускать несколько
+                изолированных друг от друга процессов, которые не могут ни
+                прерывать, ни изменять друг друга. На архитектуру macOS повлияла
+                OpenStep, которая была задумана как переносимая операционная
+                система.
+            </div>
+        </div>
+        <div id="ubuntupop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">Ubuntu</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Ubuntu — дистрибутив GNU/Linux, основанный на Debian GNU/Linux.
+                Основным разработчиком и спонсором является компания Canonical.
+                В настоящее время проект активно развивается и поддерживается
+                свободным сообществом. <br /><br />
+                Ubuntu ориентирована на удобство и простоту использования. Она
+                включает широко распространённое использование утилиты sudo,
+                которая позволяет пользователям выполнять администраторские
+                задачи, не запуская потенциально опасную сессию
+                суперпользователя. <br /><br />
+                Ubuntu, кроме того, имеет развитую интернационализацию,
+                обеспечивающую максимальную доступность для представителей
+                разных языковых групп. С версии 5.04 кодировкой по умолчанию
+                является UTF-8.
+            </div>
+        </div>
+        <div id="windowspop" class="pop">
+            <div class="popHeader">
+                <div class="popTitle">Windows</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Windows - группа семейств коммерческих проприетарных
+                операционных систем корпорации Microsoft, ориентированных на
+                управление с помощью графического интерфейса. <br /><br />
+                MS-DOS — является прародителем Windows. Каждое семейство
+                обслуживает определённый сектор компьютерной индустрии. Активные
+                семейства Microsoft Windows включают Windows NT и Windows IoT;
+                они могут включать подсемейства (например, Windows Server или
+                Windows Embedded Compact). <br /><br />
+                Изначально Windows была всего лишь графической
+                программой-надстройкой для распространённой в 1980-х и 1990-х
+                годах операционной системы MS-DOS. Согласно данным ресурса Net
+                Applications, по состоянию на август 2014 года под управлением
+                операционных систем семейства Windows работает около 88 %
+                персональных компьютеров. <br /><br />
+                Последней на данный момент операционной системой Microsoft
+                является Windows 11.
+            </div>
+        </div>
+        <div class="pop" id="like">
+            <div class="popHeader">
+                <div class="popTitle">Поздравляю!</div>
+                <button class="closePop">&times;</button>
+            </div>
+            <div class="popMain">
+                Вы ознакомились с некоторыми современными операционными
+                системами. Закройте это окно, чтобы перейти на другую страницу
+                сайта или заново прочитать информацию на карточках.
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

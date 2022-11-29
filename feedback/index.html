@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feedback</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="../mainPage/img/favicon.png">
+    </head>
+    <body>
+        <div class="login-box">
+            <h2 id="changedText">Feedback</h2>
+            <img src="img/close.png" alt="" id="close">
+            <form>
+                <div class="user-box js-box" id="js-box">
+                    <div class="firstLine">
+                        <div class="firstInputWrapper inputWrapper">
+                            <input type="text" name="name" required id="name" />
+                            <label for="name" class="firstLabel">Имя</label>
+                        </div>
+                        <div class="secondInputWrapper inputWrapper">
+                            <input
+                                type="text"
+                                name="fname"
+                                required=""
+                                id="fname"
+                            />
+                            <label for="fname">Фамилия</label>
+                        </div>
+                    </div>
+                    <div class="secondLine">
+                        <div class="thirdInputWrapper inputWrapper">
+                            <input
+                                type="text"
+                                name="mail"
+                                required=""
+                                id="main"
+                            />
+                            <label for="mail">Почта</label>
+                        </div>
+                        <div class="fourthInputWrapper inputWrapper">
+                            <input
+                                type="text"
+                                name="phone"
+                                required=""
+                                id="phone"
+                            />
+                            <label for="phone">Телефон</label>
+                        </div>
+                    </div>
+                    <div class="fifthInputWrapper inputWrapper">
+                        <input type="text" name="textarea" required="" id="textarea">
+                        <label for="textarea">Ваше сообщение</label>
+                    </div>
+                    <a id="submit-link"> Отправить </a>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

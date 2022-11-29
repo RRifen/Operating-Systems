@@ -1,0 +1,156 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.centerText {
+    transform: translateY(-300%);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    top: 0;
+    margin: 0 0 40px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.login-box .user-box label {
+    text-decoration: line-through;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    color: #037bf4;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 9px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    /* background-color: #037bf4; */
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-box a:hover {
+    border-width: 2px;
+    border-color: #0353f4;
+    border-style: solid;
+    /* background: #0353f4; */
+    color: #fff;
+    box-shadow: 0 0 50px #0353f4;
+}
+
+.login-box .js-box label {
+    text-decoration: none;
+}
+
+.firstLine {
+    display: flex;
+}
+
+.secondLine {
+    display: flex;
+}
+
+.firstInputWrapper,
+.thirdInputWrapper {
+    margin-right: 30px;;
+}
+
+#close {
+    width: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .login-box {
+        width: 90%;
+    }
+    .firstInputWrapper,
+    .secondInputWrapper,
+    .thirdInputWrapper,
+    .fourthInputWrapper {
+        width: 50%;
+    }
+    .secondLine {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 520px) {
+    .firstLine,
+    .secondLine {
+        flex-direction: column;
+    }
+    .firstInputWrapper,
+    .secondInputWrapper,
+    .thirdInputWrapper,
+    .fourthInputWrapper {
+        width: 100%;
+    }
+}

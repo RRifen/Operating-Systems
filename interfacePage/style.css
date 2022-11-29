@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+    background-color: rgb(60, 55, 106);
+}
+
+header {
+    grid-area: header;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 31, 63, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: calc(100% - 120px);
+    font-family: "Rubik", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+header nav a {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    border-width: 2px;
+    border-color: #0353f4;
+    border-style: solid;
+    color: #fff;
+    box-shadow: 0 0 50px #0353f4;
+}
+
+.card {
+    margin: 3%;
+    box-shadow: 0px 0px 8px black;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    background-color: rgb(73, 67, 124);
+    color: white;
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.card img {
+    position: relative;
+    display: block;
+    width: 30%;
+    align-self: center;
+    margin-right: 30px;
+    height: auto;
+    box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.9);
+}
+
+.card .text {
+    width: 70%;
+}
+
+#linux ul {
+    padding-left: 20px;
+}
+
+.cardsWrapper {
+    padding-top: 100px;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        height: 50px;
+        backdrop-filter: none;
+        background-color: rgba(0, 31, 63, 0.85);
+    }
+    nav {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        min-height: 100vh;
+        background-color: inherit;
+        backdrop-filter: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translateY(100vh);
+        transition: All 0.5s ease-in;
+        z-index: 10000000;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .headWrapper {
+        flex-direction: column;
+    }
+    .cardsWrapper {
+        padding-top: 50px;
+    }
+}
+
+.nav-active {
+    transform: translateY(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .card img {
+        width: 90%;
+        justify-self: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+    .card .text {
+        width: auto;
+    }
+}

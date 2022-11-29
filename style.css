@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --heading-height: 100px;
+    --border-width: -5px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+}
+
+header {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 31, 63, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: calc(100% - 120px);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+header nav a {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    border-width: 2px;
+    border-color: #0353f4;
+    border-style: solid;
+    /* background: #0353f4; */
+    color: #fff;
+    box-shadow: 0 0 50px #0353f4;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+main {
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "head head head"
+        "class class compound"
+        "class class compound";
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: 3fr 3fr 4fr;
+    padding: var(--heading-height) 50px 0;
+    background: linear-gradient(rgb(60, 55, 106), rgb(23, 20, 69));
+    z-index: 0;
+}
+
+main div h1 {
+    text-align: center;
+}
+
+main div h2 {
+    text-align: center;
+}
+
+main div {
+    padding: 10px;
+    margin: 10px;
+}
+
+main div.head {
+    grid-area: head;
+    align-self: center;
+}
+
+main div.class {
+    grid-area: class;
+}
+
+.mainWrapper:not(:hover) {
+    filter: brightness(70%);
+}
+
+.mainWrapper {
+    transition: 0.5s;
+    text-align: justify;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-image: linear-gradient(
+        to right,
+        rgba(102, 126, 234, 0.5),
+        rgba(118, 75, 162, 0.5)
+    );
+}
+
+.headWrapper {
+    display: flex;
+}
+
+main div.compound {
+    grid-area: compound;
+}
+
+.class .mainWrapper::before,
+.class .mainWrapper::after {
+    background: linear-gradient(
+        to right,
+        rgba(79, 172, 254, 0.5),
+        rgba(0, 242, 254, 0.5)
+    );
+}
+
+.headText {
+    width: 70%;
+}
+
+#PCUser {
+    align-self: flex-start;
+    display: block;
+    width: 30%;
+}
+
+#DOS {
+    margin: 30px;
+    width: 50%;
+    align-self: center;
+}
+
+#osTwo {
+    width: 40%;
+    margin-left: 60px;
+    align-self: center;
+}
+
+#UNIX {
+    display: block;
+    width: 70%;
+    align-self: center;
+    margin: 30px;
+}
+
+#windows {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.listOsWrapper {
+    text-align: left;
+    display: flex;
+}
+
+.listOsWrapper li {
+    width: 50%;
+}
+
+.listOsWrapperSecond {
+    text-align: left;
+    display: flex;
+}
+
+.listOsWrapperSecond li {
+    width: 50%;
+}
+
+.listOsWrapperThird {
+    display: flex;
+    flex-direction: column;
+}
+
+.head .mainWrapper {
+    background: linear-gradient(
+        to right,
+        rgba(102, 126, 234, 0.5),
+        rgba(118, 75, 162, 0.5)
+    );
+}
+
+.compound .mainWrapper::before,
+.compound .mainWrapper::after {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "aboutus aboutus links links"
+        "copyright copyright copyright copyright";
+    color: white;
+    background: rgb(18, 15, 55);
+    z-index: 100;
+}
+
+footer h2 {
+    margin-bottom: 6px;
+}
+
+footer h2 ~ span {
+    display: block;
+    width: 55px;
+    height: 2px;
+    background-color: bisque;
+}
+footer > div {
+    margin-left: 5%;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    height: 50px;
+    margin: 6px;
+    padding-left: 3px;
+    border-left: solid black 4px;
+}
+
+footer ul a {
+    text-decoration: none;
+}
+
+footer ul a:link {
+    color: inherit;
+}
+
+footer ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .copyright {
+    margin-left: 0;
+    grid-area: copyright;
+    width: 100%;
+    text-align: center;
+    background-color: #050714;
+}
+
+footer .copyright p {
+    margin: 0;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+footer ul a:visited {
+    color: white;
+}
+
+address {
+    font-style: normal;
+}
+
+.aboutus {
+    grid-area: aboutus;
+}
+
+.links {
+    grid-area: links;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    position: relative;
+    background-color: #110612;
+    margin: 1%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px white;
+    border: solid rgba(255, 255, 255, 0.1) 2px;
+}
+
+.button img {
+    width: 25px;
+    position: absolute;
+    margin: auto;
+    filter: invert(1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.button::before {
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    transition: 1s;
+    border: 0;
+}
+
+.button:nth-child(1):before {
+    background: linear-gradient(rgb(222, 57, 57), red);
+}
+
+.button:nth-child(2):before {
+    background: #2b0083;
+}
+
+.button:nth-child(3):before {
+    background: linear-gradient(120deg, #0088cc, #3bd6e7);
+}
+
+.button:hover::before {
+    height: 100%;
+}
+
+@media (max-width: 1080px) {
+    main {
+        grid-template-areas:
+            "head"
+            "compound"
+            "class";
+        grid-template-rows: min-content min-content min-content;
+        grid-template-columns: 1fr;
+    }
+    footer {
+        grid-template-rows: min-content min-content min-content;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "aboutus"
+            "links"
+            "copyright";
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        height: 50px;
+        backdrop-filter: none;
+        background-color: rgba(0, 31, 63, 0.85);
+    }
+    nav {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        min-height: 100vh;
+        background-color: inherit;
+        backdrop-filter: inherit; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translateY(100vh);
+        transition: All 0.5s ease-in;
+        z-index: 10000000;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%) ;
+    }
+    .headWrapper {
+        flex-direction: column;
+    }
+    .listOsWrapper {
+        flex-direction: column;
+    }
+
+    .listOsWrapper li {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .listOsWrapperSecond {
+        flex-direction: column;
+    }
+
+    .listOsWrapperSecond li {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .headText {
+        width: auto;
+    }
+
+    #PCUser {
+        width: 70%;
+        align-self: center;
+    }
+
+    #DOS {
+        width: 70%;
+    }
+
+    #osTwo {
+        width: 70%;
+        align-self: center;
+    }
+
+    #UNIX {
+        width: 100%;
+    }
+
+    #windows {
+        width: 100%;
+    }
+
+    footer {
+        z-index: 0;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 580px) {
+    main {
+        padding: 50px 0 0;
+    }
+
+    .head h1 {
+        margin-bottom: 0;
+        padding: 5px;
+    }
+
+
+
+    .mainWrapper {
+        padding: 0;
+    }
+
+    .mainWrapper h2 {
+        padding-top: 10px;
+    }
+
+    .headWrapper {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .head,
+    .compound,
+    .class {
+        padding: 0;
+        margin: 0;
+    }
+
+    main ul {
+        padding-left: 0;
+    }
+
+    main ol {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    .compound .mainWrapper {
+        padding: 10px;
+    }
+
+    footer {
+        z-index: 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .button::before {
+        height: 100%;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav-active {
+    transform: translateY(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
